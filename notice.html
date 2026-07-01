@@ -93,6 +93,18 @@
   }
   .remind-list li b{ color: var(--brand-dark); }
 
+  .sub-list{
+    list-style: decimal;
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+  }
+  .sub-list li{
+    padding-left: 6px;
+    margin-bottom: 8px;
+  }
+  .sub-list li::before{ content:none; }
+  .sub-list li:last-child{ margin-bottom:0; }
+
   .closing{
     font-size:15px; color: var(--ink);
     line-height:1.9;
@@ -159,7 +171,14 @@
   <div class="remind-title">另有以下事項提醒：</div>
   <ul class="remind-list">
     <li>此功能是每週二 <b>14:00~18:00</b> 會批次開通，無法指定其他時段、其他日期開通，遇假日順延一個工作天，將採取「<b>確認回覆後登記</b>」制度。</li>
-    <li>功能開通後，請您務必建立：1.一到兩個測試商品並勾選＝贈品 2.新增贈品優惠活動，並進行顧客端模擬下單測試，並且匯出相關商店報表、優惠使用紀錄，了解後台商品設定、訂單成立後庫存扣減邏輯及前台頁面流程。</li>
+    <li>功能開通後，請您務必要：
+      <ol class="sub-list">
+        <li>一到兩個測試商品並勾選＝贈品</li>
+        <li>新增贈品優惠活動</li>
+        <li>進行顧客端模擬下單測試，確認前台結帳流程</li>
+        <li>並且匯出相關商店報表、優惠使用紀錄，了解後台商品設定、訂單成立後庫存扣減邏輯及前台頁面流程。</li>
+      </ol>
+    </li>
     <li>開通後我們會將您「商品及分類 > 贈品」底下所有贈品搬家至「商品及分類 > 商品」裡面，並且設定「<b>網店下架＆實體店下架</b>」狀態。</li>
     <li>開通新版贈品功能後，<b>無法要求關閉此功能</b>。</li>
   </ul>
