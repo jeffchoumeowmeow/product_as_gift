@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新版贈品開通須知</title>
+<style>
+  :root{
+    --brand: #1D6FE0;
+    --brand-dark: #124FAA;
+    --brand-tint: #EAF2FE;
+    --ink: #202A37;
+    --ink-soft: #5B6673;
+    --line: #E4E9EF;
+    --paper: #FFFFFF;
+    --page-bg: #F3F5F8;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background: var(--page-bg);
+    font-family:"Noto Sans CJK TC","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color: var(--ink);
+    padding: 32px 16px;
+  }
+  .card{
+    max-width:680px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 44px 44px 52px 44px;
+    border-radius: 10px;
+  }
+
+  .topbar{ width:56px; height:5px; background: var(--brand); border-radius:3px; margin-bottom:24px; }
+
+  .intro{
+    font-size:16.5px; line-height:2; color: var(--ink);
+    margin-bottom:30px;
+  }
+  .intro b{ color: var(--brand-dark); }
+
+  hr.rule{
+    border:none; border-top:1px solid var(--line);
+    margin: 28px 0;
+  }
+
+  .qblock{ margin-bottom: 26px; }
+  .qhead{
+    display:flex; align-items:flex-start; gap:12px;
+    margin-bottom: 10px;
+  }
+  .qnum{
+    flex-shrink:0;
+    width:28px; height:28px; border-radius:50%;
+    border: 1.5px solid var(--brand);
+    color: var(--brand-dark);
+    font-weight:700; font-size:14px;
+    display:flex; align-items:center; justify-content:center;
+    margin-top:1px;
+  }
+  .qtext{
+    font-size:16.5px; font-weight:700; color: var(--ink);
+    line-height:1.7;
+  }
+  .qcond{
+    font-size:15px; color: var(--ink-soft);
+    line-height:1.9;
+    background: var(--brand-tint);
+    border-left: 3px solid var(--brand);
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-left: 40px;
+  }
+  .qcond b{ color: var(--brand-dark); }
+
+  .remind-title{
+    font-size:16.5px; font-weight:700; color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .remind-list{ list-style:none; }
+  .remind-list li{
+    position:relative;
+    font-size:15px; color: var(--ink);
+    line-height:1.9;
+    padding-left:18px;
+    margin-bottom:14px;
+  }
+  .remind-list li:last-child{ margin-bottom:0; }
+  .remind-list li::before{
+    content:"";
+    position:absolute; left:0; top:9px;
+    width:6px; height:6px; border-radius:50%;
+    background: var(--brand);
+  }
+  .remind-list li b{ color: var(--brand-dark); }
+
+  .closing{
+    font-size:15px; color: var(--ink);
+    line-height:1.9;
+    margin-top: 30px;
+  }
+  .closing a{
+    color: var(--brand-dark);
+    font-weight:700;
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--brand);
+  }
+
+  .footer{
+    max-width:680px;
+    margin: 0 auto;
+    background: #2F3544;
+    color: #FFFFFF;
+    padding: 18px 44px;
+    border-radius: 0 0 10px 10px;
+    font-size: 11px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .card{ border-radius: 10px 10px 0 0; padding-bottom: 44px; }
+
+  @media (max-width: 480px){
+    .card{ padding: 32px 24px 40px 24px; }
+    .qcond{ margin-left: 0; }
+    .footer{ padding: 18px 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="topbar"></div>
+
+  <div class="intro">
+    SHOPLINE 新版贈品功能目前正在測試中，且屬於後台的大調整，請您先閱讀以下資料：
+  </div>
+
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">1</div><div class="qtext">請問是否有使用 Layout Engine 前台設計工具？</div></div>
+    <div class="qcond">如果有，需請您注意功能開通後，需自行請您的工程師重新留意前台頁面呈現。</div>
+  </div>
+
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">2</div><div class="qtext">請問是否有串接 ERP、倉儲系統？</div></div>
+    <div class="qcond">如果有，因為新版贈品設定將設定為「<b>商品＝贈品</b>」，在後台的「訂單報表、商品銷量報表 ... 等」相關報表格式會有改版，建議請您確認您的 ERP 系統、倉儲系統可以調整支援。</div>
+  </div>
+
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">3</div><div class="qtext">請問近兩週商店是否有要進行大型活動？</div></div>
+    <div class="qcond">如果有，請您<b>不要在大型活動期間內、開跑前</b>跟我們申請，因為新版贈品會需要您重新檢查一次優惠活動，並且您有需要設定多規格贈品，所有贈品活動需要重新設定。</div>
+  </div>
+
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">4</div><div class="qtext">請問商店是否有進行直播收單？</div></div>
+    <div class="qcond">如果有，請您功能開通後，最晚務必於<b>直播日前兩天</b>，進行內部直播測試（包含設定商品、設定活動、模擬顧客喊單結帳及報表匯出），避免直播當下有問題時，我們無法在您直播當下解決問題（服務時間是平日 10:00-18:00）。</div>
+  </div>
+
+  <hr class="rule">
+
+  <div class="remind-title">另有以下事項提醒：</div>
+  <ul class="remind-list">
+    <li>此功能是每週二 <b>14:00~18:00</b> 會批次開通，無法指定其他時段、其他日期開通，遇假日順延一個工作天，將採取「<b>確認回覆後登記</b>」制度。</li>
+    <li>功能開通後，請您務必建立：1.一到兩個測試商品並勾選＝贈品 2.新增贈品優惠活動，並進行顧客端模擬下單測試，並且匯出相關商店報表、優惠使用紀錄，了解後台商品設定、訂單成立後庫存扣減邏輯及前台頁面流程。</li>
+    <li>開通後我們會將您「商品及分類 > 贈品」底下所有贈品搬家至「商品及分類 > 商品」裡面，並且設定「<b>網店下架＆實體店下架</b>」狀態。</li>
+    <li>開通新版贈品功能後，<b>無法要求關閉此功能</b>。</li>
+  </ul>
+
+  <div class="closing">
+    開通前的相關文章請務必閱讀：<a href="https://support.shoplineapp.com/hc/zh-tw/articles/47910541546265--%E5%8D%B3%E5%B0%87%E6%8E%A8%E5%87%BA-%E6%96%B0%E7%89%88%E8%B4%88%E5%93%81" target="_blank" rel="noopener">〔即將推出〕新版贈品</a> 的『注意事項』，避免您活動有不預期的狀況。
+  </div>
+
+</div>
+<div class="footer">
+  <div>製作者：SHOPLINE Merchant Success</div>
+  <div>最後更新時間：2026/07/01</div>
+</div>
+</body>
+</html>
