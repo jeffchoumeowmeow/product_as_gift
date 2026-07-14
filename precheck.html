@@ -23,54 +23,46 @@
     padding: 24px 16px;
   }
   .card{
-    max-width:860px;
+    max-width:640px;
     margin: 0 auto;
     background: var(--paper);
-    padding: 36px 40px 36px 40px;
+    padding: 30px 34px 32px 34px;
     border-radius: 10px 10px 0 0;
   }
 
-  .topbar{ width:56px; height:5px; background: var(--brand); border-radius:3px; margin-bottom:18px; }
+  .topbar{ width:48px; height:4px; background: var(--brand); border-radius:3px; margin-bottom:16px; }
 
   .intro{
-    font-size:16px; line-height:1.9; color: var(--ink);
-    margin-bottom:22px;
+    font-size:15px; line-height:1.8; color: var(--ink);
+    margin-bottom:18px;
   }
 
-  .qgrid{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
-  .qblock{
-    display:flex; flex-direction:column;
-    margin:0;
-  }
+  .qblock{ margin-bottom: 14px; }
   .qhead{
-    display:flex; align-items:flex-start; gap:10px;
-    margin-bottom: 8px;
+    display:flex; align-items:flex-start; gap:9px;
+    margin-bottom: 6px;
   }
   .qnum{
     flex-shrink:0;
-    width:26px; height:26px; border-radius:50%;
+    width:23px; height:23px; border-radius:50%;
     border: 1.5px solid var(--brand);
     color: var(--brand-dark);
-    font-weight:700; font-size:13px;
+    font-weight:700; font-size:12px;
     display:flex; align-items:center; justify-content:center;
     margin-top:1px;
   }
   .qtext{
-    font-size:15px; font-weight:700; color: var(--ink);
+    font-size:14.5px; font-weight:700; color: var(--ink);
     line-height:1.6;
   }
   .qcond{
-    flex:1;
-    font-size:13.5px; color: var(--ink-soft);
-    line-height:1.8;
+    font-size:13px; color: var(--ink-soft);
+    line-height:1.7;
     background: var(--brand-tint);
     border-left: 3px solid var(--brand);
-    padding: 11px 14px;
+    padding: 8px 12px;
     border-radius: 4px;
+    margin-left: 32px;
   }
   .qcond b{ color: var(--brand-dark); }
   .qcond a{
@@ -79,76 +71,76 @@
     word-break: break-all;
   }
   .qcond-qr{
-    display:flex; gap:12px; align-items:flex-start;
+    display:flex; gap:12px; align-items:center;
   }
   .qcond-qr .qr-text{ flex:1; }
   .qcond-qr img{
-    width:96px; height:96px;
-    background:#fff; border:1px solid var(--line); border-radius:6px;
+    width:80px; height:80px;
+    background:#fff; border:1px solid var(--line); border-radius:4px;
     flex-shrink:0;
   }
 
   hr.rule{
     border:none; border-top:1px solid var(--line);
-    margin: 22px 0 18px 0;
+    margin: 20px 0 16px 0;
   }
 
   .remind-title{
-    font-size:15.5px; font-weight:700; color: var(--ink);
-    margin-bottom: 10px;
+    font-size:14.5px; font-weight:700; color: var(--ink);
+    margin-bottom: 12px;
   }
   .remind-list{ list-style:none; }
   .remind-list li{
     position:relative;
-    font-size:14px; color: var(--ink);
-    line-height:1.8;
-    padding-left:16px;
-    margin-bottom:9px;
+    font-size:13px; color: var(--ink);
+    line-height:1.82;
+    padding-left:15px;
+    margin-bottom:11px;
   }
   .remind-list li:last-child{ margin-bottom:0; }
   .remind-list li::before{
     content:"";
     position:absolute; left:0; top:9px;
-    width:6px; height:6px; border-radius:50%;
+    width:5px; height:5px; border-radius:50%;
     background: var(--brand);
   }
   .remind-list li b{ color: var(--brand-dark); }
 
   .sub-list{
     list-style: decimal;
-    margin: 6px 0 0 0;
-    padding-left: 20px;
+    margin: 7px 0 0 0;
+    padding-left: 18px;
   }
   .sub-list li{
-    padding-left: 4px;
-    margin-bottom: 5px;
+    padding-left: 3px;
+    margin-bottom: 7px;
   }
   .sub-list li::before{ content:none; }
   .sub-list li:last-child{ margin-bottom:0; }
 
   .closing{
-    font-size:14px; color: var(--ink);
-    line-height:1.8;
-    margin-top: 20px;
+    font-size:13px; color: var(--ink);
+    line-height:1.7;
+    margin-top: 16px;
   }
   .closing b{ color: var(--brand-dark); }
 
   .footer{
-    max-width:860px;
+    max-width:640px;
     margin: 0 auto;
     background: #2F3544;
     color: #FFFFFF;
-    padding: 14px 40px;
+    padding: 12px 34px;
     border-radius: 0 0 10px 10px;
     font-size: 11px;
-    line-height: 1.8;
+    line-height: 1.7;
     text-align: center;
   }
 
-  @media (max-width: 560px){
-    .card{ padding: 28px 22px; }
-    .qgrid{ grid-template-columns: 1fr; }
-    .footer{ padding: 14px 22px; }
+  @media (max-width: 480px){
+    .card{ padding: 26px 20px; }
+    .qcond{ margin-left: 0; }
+    .footer{ padding: 12px 20px; }
   }
 </style>
 </head>
@@ -161,31 +153,27 @@
     SHOPLINE 新版贈品功能目前正在測試中，且屬於後台的重大調整，請您務必詳閱以下訊息：
   </div>
 
-  <div class="qgrid">
-
-    <div class="qblock">
-      <div class="qhead"><div class="qnum">1</div><div class="qtext">請問是否有使用 Layout Engine 前台設計工具？</div></div>
-      <div class="qcond qcond-qr">
-        <div class="qr-text">如果有，您可以參考以下網頁來自行確認語法並調整，留意前台呈現。<br><a href="https://reurl.cc/Vn6bmN" target="_blank" rel="noopener">https://reurl.cc/Vn6bmN</a></div>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAACBElEQVR4nO2bXarbMBCFv6kN91GBLiBLUXbQJZUu6e5AWkp3ID8WbE4fxnZ+oCUJOHHpzJMtfw8HhhmdkbCJO6N+uZeEQAMNNNBAA90StTl67MRk1MNkMCzLp80FBPoImiVJDajWQ26d7EQnSdI1uo2AQB9Bh6WEcgPqAVQAM+tfIyDQJ1D9OI4A09L/Xi0g0L9Ef/Nu+eeHYPgQDK8QEOgT2UoCBlA9dNj6+XJ2frvWQGe0mpnZAex7wzcvOzG5JXyFgEDvCa+tcwmJYTLVA6brytqB1kBxj541LgtpRNIIJMktYpak8natgXq2fNTKksit8+TNKVuRyNb70aW2WucpU0mSShp9RFZJUtTWXtDVwU8GSRgJyG1a1ofVIL5da6CLJzyOqAw95HY1GOc4edoRunZCgDR7CxVgdhm+g0Un3AXK5bkt3eo3Rn/15di39oXOjuKXnXuiCpOprCnbjdb/GL31hHMnTEu95RYOfj/oepbhWxaWy9TjxrBwcWK4A62BOnq+OwZvgvgTJMlOmwsI9K6Y561cAIavUI/L0OUWkanXlgICfQJd7469ogYz6nL8Pn/YjdZA18gNFifYLZPXKwUE+ue4vTsWAxiphcvYIXp7d0z9Nvq9lqoB+fOwrYBAH89W9SLqsNzAoBu9wNx0bCgg0AdQi78WAg000EAD/YfQ3226EFXQxVROAAAAAElFTkSuQmCC" alt="QR Code">
-      </div>
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">1</div><div class="qtext">請問是否有使用 Layout Engine 前台設計工具？</div></div>
+    <div class="qcond qcond-qr">
+      <div class="qr-text">如果有，您可以參考以下網頁或掃描右邊 QR Code 來自行確認語法並調整，留意前台呈現。<br><a href="https://reurl.cc/Vn6bmN" target="_blank" rel="noopener">https://reurl.cc/Vn6bmN</a></div>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOAQAAAABQysQIAAABzElEQVR4nO2awY3cMAxFHyMDc5Q7SClKB6lpOxuVMgUsIB8D2Pg5UEqcQ7DAOtmVBuLJlt/hgxCoT8om3ojjy1sETOQvofvvpyiRShBJe1uNe09yx0OiJGkHNjOIO3pZQZKke3dyR0MOM1sB4g5sC6QCZDP7cC3Pi6THzatwTfZnankOZDk95+8/TGyHCY5P0PKcSJBUgPRYIK/tU5L04VqeDtnMzGyB/HXHi29ewczM7Ft3ckdCqjWosdcDLZ3XepI7GFJdbo2gVg+CdI++lXuSOxhCtbpRns7aUqhlPM29ewHBc1qLQpBUgrylUPEN3JPcwRB3ZAZB5DVQWwqPwyB2JXc8ZLuJVA5vgs+NRJyd8EWEengR6lmmgr+2Cjwrw/uRxQcL4B2aQRTmr5tBXl97kjsY0k61Es7DRze9xb/2JHcw5OwZamUIqjPfuE9HdhVJJZzahzaLlH6N1fuSOxiSrQZwmBcFr8AE6WXtTO5QyAKxAByLezM3vW4hwFKZ92rvRxY8sfEVTsYBAyLTM/xDJO7NKQDN+fYrdyzEb9PWIIjSvFe7jvhQTFIb23gUqBOH6XevIX/eTWQzI69B0uM25wzXEJv/4vxH5Cep8h+tLrFuvQAAAABJRU5ErkJggg==" alt="QR Code">
     </div>
+  </div>
 
-    <div class="qblock">
-      <div class="qhead"><div class="qnum">2</div><div class="qtext">請問是否有串接 ERP、倉儲系統？</div></div>
-      <div class="qcond">如果有，因為新版贈品設定將設定為「商品＝贈品」，在後台的「訂單報表、商品銷量報表 ... 等」相關報表格式會有改版，<b>請務必與您的 ERP 系統窗口、倉儲系統窗口確認可以調整支援。</b></div>
-    </div>
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">2</div><div class="qtext">請問是否有串接 ERP、倉儲系統？</div></div>
+    <div class="qcond">如果有，因為新版贈品設定將設定為「商品＝贈品」，在後台的「訂單報表、商品銷量報表 ... 等」相關報表格式會有改版，<b>請務必與您的 ERP 系統窗口、倉儲系統窗口確認可以調整支援。</b></div>
+  </div>
 
-    <div class="qblock">
-      <div class="qhead"><div class="qnum">3</div><div class="qtext">請問近兩週商店是否有要進行大型活動？</div></div>
-      <div class="qcond">如果有，<b>請您不要在大型活動期間內、活動開跑前跟我們申請</b>，因為新版贈品會需要您重新檢查一次優惠活動，並且您有需要設定多規格贈品，所有贈品活動需要重新建立。</div>
-    </div>
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">3</div><div class="qtext">請問近兩週商店是否有要進行大型活動？</div></div>
+    <div class="qcond">如果有，<b>請您不要在大型活動期間內、活動開跑前跟我們申請</b>，因為新版贈品會需要您重新檢查一次優惠活動，並且您有需要設定多規格贈品，所有贈品活動需要重新建立。</div>
+  </div>
 
-    <div class="qblock">
-      <div class="qhead"><div class="qnum">4</div><div class="qtext">請問商店是否有進行直播收單？</div></div>
-      <div class="qcond">如果有，請您功能開通後，<b>最晚務必於直播日前兩天，進行內部直播測試</b>（包含設定商品、設定活動、模擬顧客喊單結帳及報表匯出），避免直播當下有問題時，我們無法在您直播當下解決問題（服務時間是平日 10:00-18:00）。</div>
-    </div>
-
+  <div class="qblock">
+    <div class="qhead"><div class="qnum">4</div><div class="qtext">請問商店是否有進行直播收單？</div></div>
+    <div class="qcond">如果有，請您功能開通後，<b>最晚務必於直播日前兩天，進行內部直播測試</b>（包含設定商品、設定活動、模擬顧客喊單結帳及報表匯出），避免直播當下有問題時，我們無法在您直播當下解決問題（服務時間是平日 10:00-18:00）。</div>
   </div>
 
   <hr class="rule">
@@ -204,7 +192,6 @@
     <li>開通後我們會將您「商品及分類 > 贈品」底下所有贈品搬家至「商品及分類 > 商品」裡面，並且設定「<b>網店下架＆實體店下架</b>」狀態。</li>
     <li>若您有購買 SHOPLINE 品牌會員購物 App 模組、SHOPLINE POS 模組，也請務必到 POS & APP 端確認測試效果。</li>
     <li>新版贈品僅於<b style="color:#e47418">每週二 14:00~18:00 批次開通，恕無法指定其他日期、其他時段</b>，遇假日順延一個工作天，採「<b>確認回覆後登記</b>」制度。</li>
-    <li><b style="color:#124FAA">每週二開通當日 14:00-18:00 期間，請勿新增或調整贈品活動</b>，以免需要重新建立或系統資料有誤。</li>
   </ul>
 
   <div class="closing">
